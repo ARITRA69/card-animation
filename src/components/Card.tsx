@@ -28,7 +28,7 @@ const Card = ({
   return (
     <div
       ref={container}
-      className="h-screen flex items-center justify-center sticky top-0"
+      className="h-screen flex items-center justify-center sticky top-0 mx-auto w-[90%] lg:w-1/2"
     >
       <motion.div
         style={{
@@ -36,12 +36,12 @@ const Card = ({
           backgroundColor: color,
           top: `calc(-5vh + ${i * 25}px)`,
         }}
-        className="w-[800px] h-[400px] rounded-xl p-6 relative"
+        className="rounded-xl p-6 relative"
       >
         <h1 className="text-black text-center text-2xl pb-6 font-semibold">
           {title}
         </h1>
-        <div className="flex justify-between items-center gap-20 h-full">
+        <div className="flex flex-col-reverse lg:flex-row justify-between items-center gap-10 lg:gap-20 h-full">
           <div className="flex flex-col gap-y-5 w-[50%]">
             <p className="line-clamp-4">{description}</p>
             <p className="text-sm">- {src}</p>
@@ -53,7 +53,7 @@ const Card = ({
                 width={600}
                 height={600}
                 alt={src}
-                className="w-[500px] h-[250px] object-cover rounded-xl"
+                className="max-w-[500px] max-h-[250px] object-cover rounded-xl"
               />
             </motion.div>
           </div>
