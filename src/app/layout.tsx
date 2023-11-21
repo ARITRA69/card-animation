@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body
         className={`${poppins.className} bg-gradient-to-tr from-pink-200 via-yellow-100 to-blue-200`}
       >
+        <Header />
         {children}
       </body>
     </html>
