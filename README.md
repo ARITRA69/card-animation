@@ -13,7 +13,7 @@ This project demonstrates a card stagger animation using Framer Motion and Lenis
 
 ## Live Demo
 
-Check out the live demo [here]([link-to-live-demo](https://card-animation-framer-motion.vercel.app/)) to see the card stagger animation in action!
+Check out the live demo [here](https://card-animation-framer-motion.vercel.app/)
 
 
 ## Getting Started
